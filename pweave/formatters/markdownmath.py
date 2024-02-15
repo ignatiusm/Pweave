@@ -17,5 +17,5 @@ class MathPattern(markdown.inlinepatterns.Pattern):
 
 class MathExtension(markdown.Extension):
 
-    def extendMarkdown(self, md, md_globals):
+    def extendMarkdown(self, md):
         md.inlinePatterns.add('math', MathPattern(), '<escape')
